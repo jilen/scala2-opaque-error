@@ -1,11 +1,11 @@
 package app
 
-import lib.Foo
+import lib._
 
 
 object FooApp {
   def main(args: Array[String]) = {
-    val f = new Foo(Foo.Id(0L))
+    val f = new Foo(Alias.of(0L))
     println(f)
   }
 }
