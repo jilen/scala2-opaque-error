@@ -5,7 +5,7 @@ on:
 
   push:
     branches:
-      - main # Check branch after merge
+      - master # Check branch after merge
 steps:
   - uses: actions/checkout@v4
     uses: actions/setup-java@v4
