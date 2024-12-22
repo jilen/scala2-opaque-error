@@ -16,4 +16,4 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           architecture: x64
-      - run: ./mill runMain app.FooApp
+      - run: ./mill app.runMain app.FooApp
