@@ -1,0 +1,17 @@
+name: Check
+
+on:
+  pull_request: # Check Pull Requests
+
+  push:
+    branches:
+      - main # Check branch after merge
+steps:
+  - uses: actions/checkout@v4
+    uses: actions/setup-java@v4
+    with:
+      java-version: '21'
+      distribution: 'temurin'
+      architecture: x64
+  - run:
+      ./mill runMain app.FooApp
